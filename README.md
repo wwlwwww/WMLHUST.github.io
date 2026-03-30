@@ -1,14 +1,14 @@
 # 企业微信 CLI 开源项目发布
 
-> 支持通过 CLI 使用企业微信核心接口能力，兼容主流 AI Agent 调用。
+> 支持通过 CLI 使用接口能力
 
 ---
 
 ## 1. 企业微信支持 CLI 开源
 
-企业微信 CLI 开源项目上架 GitHub 社区，开放企业微信**消息、日程、文档、智能表格、会议、待办、通讯录**等核心产品能力，支持主流 AI Agent 调用。
+企业微信 CLI 开源项目上架 Github 社区，开放企业微信**消息、日程、文档、智能表格、会议、待办、通讯录**等核心产品能力，支持主流 AI agent 调用。
 
-📦 **下载地址：** [GitHub - WeComTeam/wecom-cli](https://github.com/WeComTeam/wecom-cli)
+📦 **下载地址：** [GitHub](https://github.com/WecomTeam/wecom-cli)
 
 ---
 
@@ -33,10 +33,10 @@
 - **Node.js**（npm / npx）
 - **企业微信机器人的 Bot ID 和 Secret**，获取步骤如下：
 
-  1. 登录企微，进入工作台，找到「智能机器人」，并点击「手动创建」；
-  2. 选择 **API 模式**创建；
-  3. 连接方式选择「**使用长连接**」，即可获取并保存 Bot ID 及 Secret；
-  4. 配置可见成员，并完成权限授权，保存即可完成机器人创建。
+  ① 登录企微，进入工作台，找到「智能机器人」，并点击「手动创建」；  
+  ② 选择 **API 模式**创建；  
+  ③ 连接方式选择「**使用长连接**」，即可获取并保存 Bot ID 及 Secret；  
+  ④ 配置可见成员，并完成权限授权，保存即可完成机器人创建。
 
 ### 3.2 安装
 
@@ -84,7 +84,7 @@ wecom-cli call contact get_userlist '{}'
 | `wecom-send-media` | — | 通过 MEDIA 指令向用户发送本地文件（仅限 wecom 通道） |
 | `wecom-send-template-card` | — | 发送结构化模板卡片消息（仅限 wecom 通道） |
 
-> 更多请参考 [GitHub 使用文档](https://github.com/WeComTeam/wecom-cli)
+> 更多请参考 [GitHub 使用文档](https://github.com/WecomTeam/wecom-cli)
 
 ---
 
@@ -92,16 +92,15 @@ wecom-cli call contact get_userlist '{}'
 
 - **使用要求：** CLI 的使用需要用户绑定长连接方式机器人的 BOT ID 和 Secret 授权。授权后机器人将以用户身份使用对应能力。同时为避免越权，授权了 CLI 能力的机器人将限制仅创建者可对话，其他成员不可使用。**企业微信 CLI 目前优先对 ≤10 人企业开放使用。**
 
-- **⚠️ 风险提示：** 由 AI Agent 调用 CLI 操作企业微信内部应用，可能受模型幻觉等影响，存在数据泄露、越权等风险。建议在测试企业中先行验证后请谨慎使用，安装使用 CLI 后默认用户接受潜在风险。
+- **⚠️ 风险提示：** 由 AI agent 调用 CLI 操作企业微信内部应用，可能受模型幻觉等影响，存在数据泄露、越权等风险。建议在测试企业中先行验证后请谨慎使用，安装使用 CLI 后默认用户接受潜在风险。
 
 ---
 
-## 5. 相关链接
+## 5. 其他指引
 
-- 📖 [详细使用文档](https://doc.weixin.qq.com/doc/w3_AFYA1wY6ACoCNRxfnyGRJQaSa6jjJ?scode=AJEAIQdfAAoLJ5pm3iAFYA1wY6ACo)
-- 🛠️ [企业微信帮助中心](https://open.work.weixin.qq.com/help2/pc/21676)
-- 💻 [GitHub 仓库](https://github.com/WeComTeam/wecom-cli)
+- 📖 [企业微信接入 OpenClaw 指引与官方社群](https://doc.weixin.qq.com/doc/w3_AFYA1wY6ACoCNRxfnyGRJQaSa6jjJ?scode=AJEAIQdfAAoLJ5pm3iAFYA1wY6ACo)
+- 🛠️ [企业微信支持 CLI 开源 - 帮助中心](https://open.work.weixin.qq.com/help2/pc/21676)
 
 ---
 
-*本文档整理自企业微信官方发布公告。*
+*原文发布于 CSDN：[企业微信CLI开源项目发布，支持通过CLI使用接口能力](https://blog.csdn.net/WMLWONDER/article/details/159643502)*
